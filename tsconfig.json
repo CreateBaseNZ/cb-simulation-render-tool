@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES6",
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "allowJs": true,
+    "lib": [ "ES6", "WebWorker", "DOM" ],
+    "removeComments": true,
+    "resolveJsonModule": true
+  }
+}
