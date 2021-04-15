@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -19,7 +20,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: "ts-loader",
-        exclude: /node_modukes/
+        exclude: /node_modules/
       },
       {
         test: /\.s[ac]ss$/i,
@@ -35,11 +36,12 @@ module.exports = {
     extensions: [ ".tsx", ".ts", ".js" ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ filename: "index.min.html", template: "./src/index.html" }),
-    new MiniCssExtractPlugin({ filename: "index.min.css" })
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({ filename: "index.html", template: "./src/index.html" }),
+    new MiniCssExtractPlugin({ filename: "index.css" })
   ],
   devServer: {
-    contentBase: "./dist",
+    contentBase: "./src",
     compress: true,
     port: 8000
   },
