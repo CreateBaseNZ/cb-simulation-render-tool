@@ -2,7 +2,6 @@ import * as BABYLON from "babylonjs";
 
 export class Lighting {
   private _scene : BABYLON.Scene;
-  private _lighting: BABYLON.Light;
 
   constructor (scene : BABYLON.Scene) {
     this._scene = scene;
@@ -24,7 +23,7 @@ export class Lighting {
 
   private async default() {
     return new Promise(async (resolve, reject) => {
-      this._lighting = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0), this._scene);
+      new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0), this._scene);
       return resolve(null);
     })
   }

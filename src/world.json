@@ -1,7 +1,7 @@
 {
   "name": "",
   "include": {
-    "uri": "https://raw.githubusercontent.com/CreateBaseNZ/cb-simulation-model/main/assets/seashank/seashank.babylon"
+    "uri": "https://raw.githubusercontent.com/CreateBaseNZ/cb-simulation-model/main/assets/default/floor/default_floor.babylon"
   },
   "pose": {
     "x": 0,
@@ -12,26 +12,23 @@
     "yaw": 0,
     "relative_to": ""
   },
-  "gravity": { "x": 0, "y": 0, "z": 0 },
+  "gravity": { "x": 0, "y": -9.81, "z": 0 },
   "models": [
     {
-      "name": "",
+      "name": "box",
       "self_collide": true,
       "include": {
-        "uri": ""
+        "uri": "https://raw.githubusercontent.com/CreateBaseNZ/cb-simulation-model/main/assets/default/box/default_floor.babylon"
       },
       "pose": {
-        "x": 0,
-        "y": 0,
-        "z": 0,
+        "x": -1,
+        "y": 0.525,
+        "z": -2,
         "roll": 0,
         "pitch": 0,
         "yaw": 0,
         "relative_to": ""
       }
-    },
-    {
-
     }
   ],
   "actor": [
