@@ -4,10 +4,12 @@ export class Camera {
   private _scene : BABYLON.Scene;
   private _canvas : HTMLCanvasElement;
   private _camera : BABYLON.Camera;
+  private _world : any;
 
-  constructor (scene : BABYLON.Scene, canvas : HTMLCanvasElement) {
+  constructor (scene : BABYLON.Scene, canvas : HTMLCanvasElement, world : any) {
     this._scene = scene;
     this._canvas = canvas;
+    this._world = world;
   }
 
   public async set(type : string = "default") {

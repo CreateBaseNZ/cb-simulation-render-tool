@@ -1,34 +1,30 @@
 {
   "name": "",
+  "audio": {
+    "device": ""
+  },
   "include": {
     "uri": "https://raw.githubusercontent.com/CreateBaseNZ/cb-simulation-model/main/assets/default/floor/default_floor.babylon"
   },
-  "pose": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
-    "roll": 0,
-    "pitch": 0,
-    "yaw": 0,
-    "relative_to": ""
-  },
-  "gravity": { "x": 0, "y": -9.81, "z": 0 },
   "models": [
     {
       "name": "box",
+      "canonical_link": "",
+      "static": true,
       "self_collide": true,
       "include": {
         "uri": "https://raw.githubusercontent.com/CreateBaseNZ/cb-simulation-model/main/assets/default/box/default_floor.babylon"
       },
       "pose": {
-        "x": -1,
-        "y": 0.525,
-        "z": -2,
-        "roll": 0,
-        "pitch": 0,
-        "yaw": 0,
+        "x": -1, "y": 0.525, "z": -2,
+        "roll": 0, "pitch": 0, "yaw": 0,
         "relative_to": ""
-      }
+      },
+      "links": [
+        {
+          
+        }
+      ]
     }
   ],
   "actor": [

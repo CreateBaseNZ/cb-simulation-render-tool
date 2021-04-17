@@ -1,0 +1,14 @@
+{
+  "name": "box",
+  "canonical_link": "",
+  "static": true,
+  "self_collide": true,
+  "include": {
+    "uri": "https://raw.githubusercontent.com/CreateBaseNZ/cb-simulation-model/main/assets/default/box/default_floor.babylon"
+  },
+  "pose": {
+    "x": -1, "y": 0.525, "z": -2,
+    "roll": 0, "pitch": 0, "yaw": 0,
+    "relative_to": ""
+  }
+}

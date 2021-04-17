@@ -41,7 +41,7 @@ export class Project {
       // Check for errors
       
       // Set Camera Controls
-      this._camera = new Camera(this._scene, this._canvas);
+      this._camera = new Camera(this._scene, this._canvas, this._world);
       await this._camera.set();
       // Set Lighting
       this._lighting = new Lighting(this._scene);
